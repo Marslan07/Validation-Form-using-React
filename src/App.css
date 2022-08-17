@@ -1,38 +1,70 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.login-section{
+  width: 100%;
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
 }
-
-.App-link {
-  color: #61dafb;
+ .login-wrapper{
+   width: 400px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      margin: 5rem 0 5rem 0;
+      background: var(--color-white);
+    border-radius: 15px;
+    box-shadow: 0px 15px 20px rgba(0,0,0,0.1);
+  }
+.login-wrapper .title{
+  font-size: 35px;
+  font-weight: 600;
+  text-align: center;
+  line-height: 100px;
+  color: #fff;
+  user-select: none;
+  background: linear-gradient(-135deg,  #36458d, #793674);
+  border-radius: 15px 15px 0 0;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.login-wrapper form{
+  padding: 10px 50px 50px 30px;
+}
+.login-wrapper form .field{
+  width: 100%;
+  margin: 1rem 0;
+}
+.login-wrapper form .field input{
+  height: 100%;
+  width: 100%;
+  outline: none;
+  font-size: 17px;
+  padding: 13px;
+  margin-top: 0.5rem;
+  border: 1px solid lightgrey;
+  border-radius: 25px;
+  transition: all 0.3s ease;
+}
+.login-wrapper form .field label{
+  color: black;
+  margin: 1rem ;
+  font-weight: 400;
+  font-size: 1.2rem;
+  pointer-events: none;
+  transform: translateY(-50%);
+  transition: all 0.3s ease;
+}
+form input[type="submit"]{
+  width: 150px;
+  color: #fff;
+  border: none;
+  padding: 0.8rem;
+  font-size: 20px;
+  border-radius: 50px;
+  font-weight: 500;
+  cursor: pointer; 
+   background: linear-gradient(-135deg,  #793674, #36458d);
+  transition: all 0.3s ease;
+}
+form .btn-login{
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
